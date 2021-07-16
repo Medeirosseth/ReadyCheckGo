@@ -1,0 +1,24 @@
+Name of Student: Seth Medeiros
+
+Name of Project: Check, Set, Go!
+
+Project's Purpose or Goal: Users will use the application for the pre-seeded checklists in order to prepare for road trips, vacations, party planning, goals, etc... Users will also have the ability to customize their own checklist and have CRUD capabilities.
+
+List the absolute minimum features the project requires to meet this purpose or goal:
+
+pre-seeded checklist for a road trip
+Crud capabilities 
+appealing UI
+What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
+
+MySQL to store seeded data and user CRUD data
+C#/.NET -MVC framework
+React UI
+If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
+
+Research and implement a travel API that works well with the RoadTrip checklist
+Authenticatication and registration 
+expand on UI
+What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
+
+ https://olery.com/blog/the-best-travel-apis-discover-contribute/
