@@ -4,15 +4,18 @@ import Form from './components/Form';
 
 function App() {
   const [inputText, setInputText] = useState("");
-  const [todos, setToDos] = useState([]);
+  const [items, setItems] = useState([]);
   return (
     <div className="App">
       <header>Testing, Testing, is this thing on?</header>
       <Form 
         setInputText={setInputText}
-        setToDos={setToDos}
-        todos={todos}
+        setItems={setItems}
+        items={items}
         inputText={inputText}
+      />
+      <CheckList 
+      items={items}
       />
     </div>
   );
