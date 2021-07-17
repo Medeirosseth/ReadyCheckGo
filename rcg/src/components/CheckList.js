@@ -3,11 +3,15 @@ import Item from "./Item"
 
 const CheckList = ({items, setItems}) => {
 return(
-  <div>
-    <ul>
+  <div className="checklist-container">
+    <ul className="checklist-list">
       {items.map(item => (
         <Item 
+          key={item.id}
           text={item.text}
+          setItems={setItems}
+          items={items}
+          item={item}
          />
       ))}
     </ul>

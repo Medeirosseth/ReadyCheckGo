@@ -1,7 +1,13 @@
 import React from "react";
 
 
-const Item = ({text}) => {
+const Item = ({text, setItems, items, item}) => {
+
+  const deleteHandler = () => {
+    setItems(items.filter(e => e.id !== item.id))
+    console.log(item)
+  }
+
   return (
     <div className="item">
       <li className="todo-item">{text}</li>
@@ -9,7 +15,7 @@ const Item = ({text}) => {
         <i className="fas fa-check">CHECK</i>
       </button>
       <button>
-        <i className="fas fa-trash">Trash</i>
+        <i onClick={deleteHandler} className="fas fa-trash">Trash</i>
       </button>
     </div>
 

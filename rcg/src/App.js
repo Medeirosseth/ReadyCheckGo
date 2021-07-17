@@ -18,6 +18,7 @@ function App() {
       />
       <CheckList
         items={items} 
+        setItems={setItems}
       />
     </div>
   );
