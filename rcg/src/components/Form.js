@@ -19,7 +19,7 @@ const Form = ({setInputText, setItems, items, inputText}) => {
   }
   return(
     <form>
-      <input onChange={inputTextHandler} type="text"></input>
+      <input value={inputText} onChange={inputTextHandler} type="text"></input>
       <button onClick={inputSubmitHandler} type="submit">submit</button>
     </form>
   )

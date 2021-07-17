@@ -16,7 +16,9 @@ function App() {
         items={items}
         inputText={inputText}
       />
-      <CheckList />
+      <CheckList
+        items={items} 
+      />
     </div>
   );
 }
