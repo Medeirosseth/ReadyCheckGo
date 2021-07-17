@@ -1,11 +1,15 @@
 import React from "react"
-import Item from "/Item"
 
-const CheckList = () => {
+const CheckList = ({items, setItems}) => {
 return(
   <div>
     <ul>
-      <li></li>
+      <li>
+      <item 
+      items={items}
+      setItems={setItems}
+      />
+      </li>
     </ul>
   </div>
 

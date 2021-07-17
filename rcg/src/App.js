@@ -1,9 +1,11 @@
 import './App.css';
 import React, {useState} from "react";
 import Form from './components/Form';
+import CheckList from './components/CheckList';
+
 
 function App() {
-  const [inputText, setInputText] = useState("");
+  const [inputText, setInputText] = useState('');
   const [items, setItems] = useState([]);
   return (
     <div className="App">
@@ -14,9 +16,7 @@ function App() {
         items={items}
         inputText={inputText}
       />
-      <CheckList 
-      items={items}
-      />
+      <CheckList />
     </div>
   );
 }
