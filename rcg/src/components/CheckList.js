@@ -11,7 +11,6 @@ return(
           text={item.text}
           setItems={setItems}
           items={items}
-          item={item}
          />
       ))}
     </ul>

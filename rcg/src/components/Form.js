@@ -17,10 +17,18 @@ const Form = ({setInputText, setItems, items, inputText}) => {
       }
     ])
   }
+
+  const statusHandler = () => {
+  }
   return(
     <form>
       <input value={inputText} onChange={inputTextHandler} type="text"></input>
       <button onClick={inputSubmitHandler} type="submit">submit</button>
+      <select onChange={statusHandler}>
+        <option value="all">ALL</option>
+        <option value="completed">Completed</option>
+        <option value="uncompleted">Uncompleted</option>
+      </select>
     </form>
   )
 }

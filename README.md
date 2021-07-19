@@ -14,7 +14,7 @@
 
 ## Description:memo:
 
-_React is an application that assists with organizing tasks and _
+_Ready Check Go is an application that helps organize tasks for certain occasions _
 
 <details>
   <summary>Setup/installation Requirements:open_file_folder:</summary>

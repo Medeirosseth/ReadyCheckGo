@@ -19,18 +19,17 @@ const Item = ({text, setItems, items, item}) => {
     }))
   }
 
-  return (
+  return(
     <div className="item">
-      <li className="todo-item">{text}</li>
-      <button>
-        <i onClick={completeHandler} className="fas fa-check">CHECK</i>
+      <li className={`checklist-item ${item.completed ? "completed" : ""}`}>{text}</li>
+      <button onClick={completeHandler} className="complete-btn" > 
+        <i className="fas fa-check"></i>
       </button>
-      <button>
-        <i onClick={deleteHandler} className="fas fa-trash">Trash</i>
+      <button onClick={deleteHandler} className="trash-btn">
+        <i className="fas fa-trash"></i>
       </button>
     </div>
-
-  );
+  )
 }
 
 export default Item;
