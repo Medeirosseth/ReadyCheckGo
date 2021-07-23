@@ -5,7 +5,7 @@ const CheckList = ({items, setItems, filteredItems}) => {
 return(
   <div className="checklist-container">
     <ul className="checklist-list">
-      {items.map(item => (
+      {filteredItems.map(item => (
         <Item 
           key={item.id}
           text={item.text}
