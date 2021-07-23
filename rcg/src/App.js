@@ -42,12 +42,10 @@ function App() {
     }
   }
 
-
-
   return (
     <div className="App">
       <header>Testing, Testing, is this thing on?</header>
-      <animated.h1 style={textOneStyle}> Ready </animated.h1>
+      <h1> Ready </h1>
       <h1>Check</h1>
       <h1>Go</h1>
       <Form 
