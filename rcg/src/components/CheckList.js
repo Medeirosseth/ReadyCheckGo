@@ -1,7 +1,7 @@
 import React from "react"
 import Item from "./Item"
 
-const CheckList = ({items, setItems, text}) => {
+const CheckList = ({items, setItems, text, item}) => {
 return(
   <div className="checklist-container">
     <ul className="checklist-list">
@@ -11,6 +11,7 @@ return(
           text={item.text}
           setItems={setItems}
           items={items}
+          item={item}
          />
       ))}
     </ul>

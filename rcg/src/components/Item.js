@@ -9,24 +9,24 @@ const Item = ({text, setItems, items, item}) => {
   }
 
   const completeHandler = () => {
-    setItems(items.map((element) => {
-      if(element.id === item.id){
+    setItems(items.map((e) => {
+      if(e.id === item.id){
         return {
-          ...element, completed: !element.completed
+          ...e, completed: !e.completed
         }
       }
-      return element;
+      return e;
     }))
   }
 
-  return (
-    <div className="item">
-      <li className={`checklist-item ${item.completed ? "completed" : ""}`}>{text}</li>
+  return(
+    <div className="todo">
+      <li className={`todo-item ${item.completed ? "completed" : ""}`}>{text}</li>
       <button onClick={completeHandler} className="complete-btn" > 
-        <i className="fas fa-check"></i>
+        <i className="fas fa-check">COMPLETED</i>
       </button>
       <button onClick={deleteHandler} className="trash-btn">
-        <i className="fas fa-trash"></i>
+        <i className="fas fa-trash">DELETE</i>
       </button>
     </div>
   )
