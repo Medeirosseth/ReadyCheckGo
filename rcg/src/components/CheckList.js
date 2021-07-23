@@ -1,7 +1,7 @@
 import React from "react"
 import Item from "./Item"
 
-const CheckList = ({items, setItems, text, item}) => {
+const CheckList = ({items, setItems, filteredItems}) => {
 return(
   <div className="checklist-container">
     <ul className="checklist-list">
