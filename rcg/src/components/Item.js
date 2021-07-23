@@ -4,22 +4,22 @@ import React from "react";
 const Item = ({text, setItems, items, item}) => {
 
   const deleteHandler = () => {
-    setItems(items.filter(e => e.id !== item.id))
+    setItems(items.filter(el => el.id !== item.id))
     console.log(item)
   }
 
   const completeHandler = () => {
-    setItems(items.map((e) => {
-      if(e.id === item.id){
+    setItems(items.map((element) => {
+      if(element.id === item.id){
         return {
-          ...e, completed: !e.completed
+          ...element, completed: !element.completed
         }
       }
-      return e;
+      return element;
     }))
   }
 
-  return(
+  return (
     <div className="item">
       <li className={`checklist-item ${item.completed ? "completed" : ""}`}>{text}</li>
       <button onClick={completeHandler} className="complete-btn" > 
