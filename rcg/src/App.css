@@ -5,9 +5,17 @@ body {
   min-height: 100vh;
 }
 
+.App{
+  margin-top: 30%;
+  padding-top: 30%;
+}
+
 li{
   list-style-type: none;
-  color: black
+  color: black;
+  padding: 0.2rem;
+  font-size: 2rem;
+  border: none;
 }
 
 form input,
@@ -21,6 +29,31 @@ form button {
 select {
   padding: 0.12rem;
   font-size: 2rem;
+  appearance: none;
+  border: white;
+
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.complete-btn {
+  background: rgb(11, 212, 162);
+}
+.todo-item {
+  padding: 0rem 0.5rem;
 }
 
 
