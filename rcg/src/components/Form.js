@@ -24,7 +24,7 @@ const Form = ({setInputText, setItems, items, inputText, setStatus}) => {
   }
   return(
     <form>
-      <input value={inputText} onChange={inputTextHandler} type="text"></input>
+      <input value={inputText} onChange={inputTextHandler} type="text"></input>.
       <button onClick={inputSubmitHandler} type="submit">submit</button>
       <select onChange={statusHandler}>
         <option value="all">ALL</option>

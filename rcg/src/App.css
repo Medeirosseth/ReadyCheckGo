@@ -5,9 +5,9 @@ body {
   min-height: 100vh;
 }
 
-.App{
-  margin-top: 30%;
-  padding-top: 30%;
+.completed {
+  text-decoration: line-through;
+  opacity: 0.09;
 }
 
 li{
