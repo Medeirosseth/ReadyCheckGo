@@ -35,5 +35,4 @@ const Form = ({setInputText, setItems, items, inputText, setStatus}) => {
   )
 }
 
-
 export default Form;
