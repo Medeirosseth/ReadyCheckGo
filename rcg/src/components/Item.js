@@ -23,7 +23,7 @@ const Item = ({text, setItems, items, item}) => {
     <div className="todo">
       <li className={`todo-item ${item.completed ? "completed" : ""}`}>{text}</li>
       <button onClick={completeHandler} className="complete-btn" > 
-        <i className="fas fa-check">COMPLETED</i>
+        <i className="fas fa-check">:white_check_mark:</i>
       </button>
       <button onClick={deleteHandler} className="trash-btn">
         <i className="fas fa-trash">DELETE</i>

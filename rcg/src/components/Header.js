@@ -3,7 +3,11 @@ import React from "react"
 function Header(){
   return (
     <>
-      <h1>READY // CHECK // GO</h1>
+      <h1>
+        <span className="red" >READY</span> // 
+        <span className="yellow" > CHECK</span> //
+        <span className="green" > GO</span>
+      </h1>
     </>
   );
 }
