@@ -6,7 +6,6 @@ import CheckList from './components/CheckList';
 import Header from './components/Header';
 
 
-
 function App() {
   // const textOneRef = useRef();
   // const textOneStyle = useSpring({
