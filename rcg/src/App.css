@@ -1,8 +1,38 @@
 body {
-  background-color: aquamarine;
+  background-image: linear-gradient(134deg, #bab7af 0%, #0c0908 100%);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+li{
+  list-style-type: none;
+}
+
+form input,
+form button {
+  padding: 0.2rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+ 
+}
+
+form button {
+  color: black;
+  background: white;
+  cursor: pointer;
+}
+
+.footer{
+  border: solid black;
+  background-color: black;
+  color: white;
+  margin-top: 75vh;
 }
 
 
-.footer{
-  border: black;
+Body {
+  font-family: 'Russo One', sans-serif;
+
 }
