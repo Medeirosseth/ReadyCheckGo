@@ -16,8 +16,13 @@ form button {
   font-size: 2rem;
   border: none;
   background: white;
- 
 }
+
+select {
+  padding: 0.12rem;
+  font-size: 2rem;
+}
+
 
 form button {
   color: black;
