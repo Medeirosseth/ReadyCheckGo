@@ -3,6 +3,7 @@ import React, {useState, useEffect, useRef } from "react";
 //import { useSpring, animated } from 'react-spring'
 import Form from './components/Form';
 import CheckList from './components/CheckList';
+import Header from './components/Header';
 
 
 
@@ -44,10 +45,7 @@ function App() {
 
   return (
     <div className="App">
-      <header>Testing, Testing, is this thing on?</header>
-      <h1> Ready </h1>
-      <h1>Check</h1>
-      <h1>Go</h1>
+      <Header />
       <Form 
         setInputText={setInputText}
         setItems={setItems}
