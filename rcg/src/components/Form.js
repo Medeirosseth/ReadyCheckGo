@@ -16,6 +16,7 @@ const Form = ({setInputText, setItems, items, inputText, setStatus}) => {
         id: Math.random() * 10
       }
     ])
+    setInputText("")
   }
 
   const statusHandler = (e) => {
