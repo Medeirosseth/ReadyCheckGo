@@ -1,6 +1,4 @@
-import React, {useState, useEffect, useRef } from "react";
-import axios from 'axios'
-//import { useSpring, animated } from 'react-spring'
+import React, {useState, useEffect } from "react";
 import Form from "./Form"
 import CheckList from "./CheckList";
 
@@ -31,7 +29,7 @@ const CheckControl = ()=> {
     }
   }
 
-  
+
 
   return (
     <div className="App">
