@@ -3,7 +3,7 @@ import Item from "./Item"
 
 const CheckList = ({items, setItems, filteredItems}) => {
 return(
-  <div className="checklist-container">
+  <div className="checklist-container mb-0">
     <ul className="checklist-list">
       {filteredItems.map(item => (
         <Item 
