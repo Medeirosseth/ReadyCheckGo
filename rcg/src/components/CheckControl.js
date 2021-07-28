@@ -15,8 +15,6 @@ const CheckControl = ()=> {
 
 
 
-  
-
   const filterHandler = () => {
     switch(status){
       case "completed":

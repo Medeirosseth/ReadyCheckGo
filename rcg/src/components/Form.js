@@ -1,10 +1,11 @@
 import React from "react";
 import { v4 } from "uuid";
+import { useFireStore} from 'react-redux-firebase'
 
 const Form = ({setInputText, setItems, items, inputText, setStatus}) => {
 
   const inputTextHandler = (e) => {
-    console.log(e.target.value)
+
     setInputText(e.target.value)
   }
 
