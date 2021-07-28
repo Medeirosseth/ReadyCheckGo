@@ -19,13 +19,13 @@ const rrfProps = {
 }
 
 ReactDOM.render(
-  <provider store={store}>
-    <ReactReduxFirebaseProvider {...rrfProps}> 
-      <React.StrictMode>
-            <App />
-      </React.StrictMode>
-    </ReactReduxFirebaseProvider>
-  </provider>,
+  <React.StrictMode>
+    <provider store={store}>
+      <ReactReduxFirebaseProvider {...rrfProps}> 
+              <App />
+      </ReactReduxFirebaseProvider>
+    </provider>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
