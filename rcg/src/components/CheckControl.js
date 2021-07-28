@@ -5,31 +5,36 @@ import CheckList from "./CheckList";
 
 const CheckControl = ()=> {
   const [inputText, setInputText] = useState('');
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(
+    JSON.parse(localStorage.getItem('CheckControl--items') || '[]')
+  );
   const [status, setStatus] = useState('all')
-  const [filteredItems, setFilteredItems] = useState([])
+  const [filteredItems, setFilteredItems] = useState(
+    JSON.parse(localStorage.getItem('CheckControl--filteredItems') || '[]')
+  )
 
   useEffect(() => {
+    localStorage.setItem('CheckControl--items', JSON.stringify(items))
+    localStorage.setItem('CheckControl--filteredItems', JSON.stringify(filteredItems))
+  }, [items, filteredItems])
+
+  useEffect(() => {
+    const filterHandler = () => {
+      switch(status){
+        case "completed":
+          setFilteredItems(items.filter((item) => item.completed === true ))
+          break;
+        case "uncompleted":
+          setFilteredItems(items.filter((item) => item.completed === false))
+          break;
+        default:
+          setFilteredItems(items);
+          break;
+      }
+    }
+    
     filterHandler()
   }, [items, status] )
-
-
-
-  const filterHandler = () => {
-    switch(status){
-      case "completed":
-        setFilteredItems(items.filter((item) => item.completed === true ))
-        break;
-      case "uncompleted":
-        setFilteredItems(items.filter((item) => item.completed === false))
-        break;
-      default:
-        setFilteredItems(items);
-        break;
-    }
-  }
-
-
 
   return (
     <div className="App">

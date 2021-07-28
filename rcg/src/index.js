@@ -3,28 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
-import { createFirestoreInstance } from 'redux-firestore';
-import Firebase from "./Firebase";
 
-const store = createStore(rootReducer)
-
-const rrfProps = {
-  Firebase,
-  config: {
-    userProfile: "users"
-  },
-  dispatch: store.dispatch,
-  createFirestoreInstance
-}
 
 ReactDOM.render(
   <React.StrictMode>
-    <provider store={store}>
-      <ReactReduxFirebaseProvider {...rrfProps}> 
-              <App />
-      </ReactReduxFirebaseProvider>
-    </provider>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

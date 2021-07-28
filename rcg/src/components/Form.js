@@ -1,8 +1,13 @@
 import React from "react";
 import { v4 } from "uuid";
-import { useFireStore} from 'react-redux-firebase'
+//import { useFireStore, useFireStoreConnect, isLoaded} from 'react-redux-firebase'
 
 const Form = ({setInputText, setItems, items, inputText, setStatus}) => {
+  //const firestore = useFirestore();
+
+  //useFireStoreConnect([
+  //  {collection: 'Item'},
+  //])
 
   const inputTextHandler = (e) => {
 
