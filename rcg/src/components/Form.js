@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { v4 } from "uuid";
 
 const Form = ({setInputText, setItems, items, inputText, setStatus}) => {
 
@@ -13,7 +14,7 @@ const Form = ({setInputText, setItems, items, inputText, setStatus}) => {
       ...items,{
         text: inputText,
         completed: false,
-        id: Math.random() * 10
+        id: v4()
       }
     ])
     setInputText("")
