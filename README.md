@@ -19,6 +19,10 @@ _Ready Check Go is an application that helps organize tasks for certain occasion
 <details>
   <summary>Setup/installation Requirements:open_file_folder:</summary>
   
+
+
+
+  
 ## Setup and Use
 
 ### Prerequisites
