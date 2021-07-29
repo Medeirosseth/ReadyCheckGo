@@ -7,7 +7,6 @@
 * _HTML_
 * _CSS_
 * _Javascript_
-* _Jquery_
 * _React_
 * _React Developer Tools_
 * _Github_
