@@ -4,5 +4,4 @@ const SplashPage = () => {
   return <div>SPLASH PAGE</div>  
 }
 
-
 export default SplashPage
