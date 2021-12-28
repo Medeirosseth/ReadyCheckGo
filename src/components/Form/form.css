@@ -26,6 +26,7 @@
   appearance: none;
   border: rgb(0, 0, 0);
   border-radius: 15px;
+  background-color: white;
   scrollbar-highlight-color: violet;
 }
 
