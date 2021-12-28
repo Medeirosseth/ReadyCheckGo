@@ -1,5 +1,5 @@
 import React from "react"
-import Item from "./Item"
+import Item from "../Item/Item"
 
 const CheckList = ({items, setItems, filteredItems}) => {
 return(
@@ -12,7 +12,7 @@ return(
           setItems={setItems}
           items={items}
           item={item}
-         />
+      />
       ))}
     </ul>
   </div>

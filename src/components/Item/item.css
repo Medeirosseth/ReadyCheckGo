@@ -1,0 +1,45 @@
+.item{
+  display: flex;
+  justify-content: center;
+}
+
+li{
+  list-style-type: none;
+  background-color: linear-gradient(2deg, #ffffff 50%, #5e9c8cd2 100%);
+  color: black;
+  padding: 0.2rem;
+  font-size: 2rem;
+}
+
+
+.completed {
+  transition: .9s ease;
+  opacity: 0.09;
+  text-decoration: line-through;
+}
+
+.trash-btn {
+  border: solid red;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.complete-btn{
+  border:  solid rgb(11, 212, 162);
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+@media(max-width: 500px) {
+  .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+  }
+
+}

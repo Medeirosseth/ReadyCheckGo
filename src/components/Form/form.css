@@ -1,0 +1,37 @@
+.form{
+  display: flex;
+  justify-content: center;
+}
+
+.formInput,
+.formButton {
+  padding: 0.8rem;
+  border: solid 2px black;
+  font-size: 1.6rem;
+  border: none;
+  margin-left: 6px;
+  border-radius: 35px;
+}
+
+.formButton{
+  color: black;
+  background: white;
+  cursor: pointer;
+}
+
+.formSelect {
+  padding: 0.8rem;
+  margin-left: 6px;
+  font-size: 1.6rem;
+  appearance: none;
+  border: rgb(0, 0, 0);
+  border-radius: 15px;
+  scrollbar-highlight-color: violet;
+}
+
+@media(max-width: 500px) {
+  .formButton, .formSelect {
+    margin-top: 10px;
+  }
+
+}

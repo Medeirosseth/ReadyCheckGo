@@ -1,6 +1,6 @@
 import React, {useState, useEffect } from "react";
-import Form from "./Form"
-import CheckList from "./CheckList";
+import Form from "./Form/Form"
+import CheckList from "./CheckList/CheckList";
 
 
 const CheckControl = ()=> {
